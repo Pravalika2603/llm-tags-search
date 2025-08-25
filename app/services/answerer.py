@@ -2,7 +2,12 @@ from openai import OpenAI
 from typing import List, Dict
 from ..config import settings
 
-client = OpenAI(api_key=settings.OPENAI_API_KEY)
+print("Using OpenAI API key:", settings.OPENAI_API_KEY)
+client = OpenAI(
+    api_key=settings.OPENAI_API_KEY
+)
+
+
 
 ANSWER_SYS = (
 "Answer only from the provided context. If unsure, say you don't know. "

@@ -5,7 +5,7 @@ pydantic-settings==2.4.0
 
 SQLAlchemy==2.0.32
 psycopg2-binary==2.9.9
-sqlalchemy-pgvector==0.2.5
+pgvector
 
 orjson==3.10.7
 python-multipart==0.0.9
@@ -28,6 +28,6 @@ openpyxl==3.1.5
 spacy==3.7.5
 keybert==0.8.5
 
-openai==1.43.0
+openai
 
 nltk==3.9.1

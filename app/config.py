@@ -3,7 +3,7 @@ from pydantic import Field
 
 class Settings(BaseSettings):
     DATABASE_URL: str
-    OPENAI_API_KEY: str | None = None
+    OPENAI_API_KEY: str = Field(..., env="OPENAI_API_KEY")
     EMBEDDING_MODEL: str = "intfloat/e5-large-v2"
     EMBEDDING_DIM: int = 1024
     DEFAULT_SENSITIVITY: str = "Internal"
