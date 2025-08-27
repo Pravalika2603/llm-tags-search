@@ -9,7 +9,7 @@ class Extracted(TypedDict):
     structure: list[dict]   # [{"heading":"...", "start":int}, ...]
     pages: list[str]
     lang: str
-    ocr_confidence: float | None
+    ocr_confidence: float
 
 def _lang(text: str) -> str:
     try:
